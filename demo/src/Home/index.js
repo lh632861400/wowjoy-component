@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import { Btn_1 as Btn } from "@src";
+import Icon from '@src/components/icon'
 class Home extends Component {
   render() {
     return (
-      <Btn to={'/list'}>点击进入</Btn>
+      <div>
+        <Icon type={"wowjoyplatform-big-fill"} theme={"filled"}/>
+        <Btn to={'/list'}>点击进入</Btn>
+      </div>
     );
   }
 }

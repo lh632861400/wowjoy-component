@@ -1,0 +1,104 @@
+{
+  "name": "wowjoy-component",
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.jsx?$": "babel7-jest"
+    },
+    "collectCoverage": false
+  },
+  "version": "3.1.2",
+  "description": "wowjoy-component React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "create": "node scripts/createComponent.js",
+    "ctest": "node scripts/createTest.js",
+    "build": "nwb build-react-component --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "start:site": "bisheng --config site/bisheng.config.js start",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "peerDependencies": {
+    "@svgr/webpack": "^2.0.0",
+    "react": "16.x",
+    "react-dom": "16.x",
+    "react-router-dom": "4.x",
+    "styled-components": "^4.x"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^2.0.0",
+    "@types/classnames": "^2.2.7",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-named-asset-import": "^0.3.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^7.0.2",
+    "bisheng": "^1.1.2",
+    "css-split-webpack-plugin": "^0.2.6",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "fork-ts-checker-webpack-plugin": "^1.0.1",
+    "jest": "^23.6.0",
+    "nwb": "^0.23.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.7.0",
+    "source-map-loader": "^0.2.4",
+    "styled-components": "4.x",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1"
+  },
+  "author": "manglobe",
+  "homepage": "https://github.com/wow-joy/wowjoy-component",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ],
+  "dependencies": {
+    "@ant-design/colors": "^2.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-react-constant-elements": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@sentry/browser": "^4.6.4",
+    "antd": "^3.15.1",
+    "babel-core": "^6.26.3",
+    "babel7-jest": "^1.0.1",
+    "bisheng-theme-one": "^0.2.35",
+    "classnames": "^2.2.6",
+    "cryptiles": "4.x",
+    "docsearch.js": "^2.6.2",
+    "enquire-js": "^0.2.1",
+    "intersection-observer": "^0.5.1",
+    "logrocket": "^0.6.19",
+    "logrocket-react": "^3.0.0",
+    "lz-string": "^1.4.4",
+    "rc-queue-anim": "^1.6.12",
+    "rc-scroll-anim": "^2.5.6",
+    "react-color": "^2.17.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-github-button": "^0.1.11",
+    "react-intl": "^2.8.0",
+    "scrollama": "^2.0.0",
+    "url-parse": "1.4.4"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}

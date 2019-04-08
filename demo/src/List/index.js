@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Components from "../../../src";
+import Components from "../../../src/components";
 class List extends Component {
   render() {
     return (
